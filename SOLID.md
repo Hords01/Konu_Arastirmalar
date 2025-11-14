@@ -1,6 +1,6 @@
 # SOLID Prensipleri
 
-**SOLID**, nesne yönelimli programlamada (OOP) daha okunabilir, genişletilebilir ve sürdürülebilir bir mimari kurmak için kullanılan beş temel prensibi ifade eder. Aşağıdaki özet, hem teknik doğruluğu korur hem de akıcı bir anlatım sunar.
+**SOLID**, nesne yönelimli programlamada (OOP) daha okunabilir, genişletilebilir ve sürdürülebilir bir mimari kurmak için kullanılan beş temel prensibi ifade eder.
 
 ---
 
