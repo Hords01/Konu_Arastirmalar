@@ -67,4 +67,4 @@ Soyutlamaya bağımlı olmak, modüllerin bağımsızca evrilmesini sağlar.
 - **I** — Küçük ve odaklı arayüzler  
 - **D** — Soyutlamaya bağımlılık  
 
-Bu prensipler bir arada kullanıldığında, büyüyen projeleri yönetmek çok daha kolay hale gelir.
+SOLID'le kal, geceleri uykusuz kalma!
