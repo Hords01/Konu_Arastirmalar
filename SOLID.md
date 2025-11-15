@@ -9,6 +9,8 @@
 Bir sınıf **yalnızca tek bir işten sorumlu olmalıdır**.  
 Bir sınıfı değiştirmek için **tek bir mantıksal sebep** bulunmalıdır.
 
+-> Bir sınıf hem taksi çağırıp hem makarna haşlamasın.
+
 Bu prensip, kodun daha düzenli ve yönetilebilir kalmasını sağlar.
 
 ---
@@ -17,6 +19,8 @@ Bu prensip, kodun daha düzenli ve yönetilebilir kalmasını sağlar.
 
 Yazılım bileşenleri **genişletmeye açık**, **değiştirmeye kapalı** olmalıdır.  
 Yani yeni davranış eklerken mevcut kodu mümkün olduğunca bozmamak hedeflenir.
+
+-> Yeni tarif eklemek için mevcut tarifleri değiştirmeye gerek yok.
 
 Bu tasarım yaklaşımı, sistemi geliştirmeyi güvenli ve öngörülebilir hale getirir.
 
@@ -27,6 +31,8 @@ Bu tasarım yaklaşımı, sistemi geliştirmeyi güvenli ve öngörülebilir hal
 Alt sınıflar, üst sınıfların yerine **sorunsuz bir şekilde kullanılabilmelidir**.  
 Bir alt sınıf, base sınıfın beklentilerini bozuyorsa bu prensip ihlal edilmiş olur.
 
+-> Fatura sınıfları: elektrik, su, internet aynı Öde() metodunu sorunsuz kullanabilmeli.
+
 Doğru uygulanması, polimorfizmin sağlıklı işlemesi açısından kritiktir.
 
 ---
@@ -36,6 +42,8 @@ Doğru uygulanması, polimorfizmin sağlıklı işlemesi açısından kritiktir.
 Bir sınıfa **ihtiyaç duymadığı metotları** zorunlu kılan geniş ve şişkin arayüzler kullanılmamalıdır.  
 Arayüzler daha küçük, odaklı ve net sorumluluklara bölünmelidir.
 
+-> Kullanıcıya ihtiyacı olmayan dev bir kumanda verilmemeli, bir sınıfa ihtiyacı olmayacağı kadar çok fonksiyonluk bir arayüz atanmamalı.
+
 Bu yaklaşım, bağımlılıkları azaltır ve geliştirmeyi kolaylaştırır.
 
 ---
@@ -44,6 +52,8 @@ Bu yaklaşım, bağımlılıkları azaltır ve geliştirmeyi kolaylaştırır.
 
 Yüksek seviye bileşenler, düşük seviye bileşenlere değil; **soyutlamalara (interface/abstract class)** bağımlı olmalıdır.  
 Beton (concrete) implementasyonlara doğrudan bağımlılık sistemi kırılgan hale getirir.
+
+-> Kahve makinesi, hangi kahveyi kullanacağını soyut bir KahveTürleri üzerinden seçer; yeni kahve türleri eklemek için makineyi değiştirmene gerek yoktur.
 
 Soyutlamaya bağımlı olmak, modüllerin bağımsızca evrilmesini sağlar.
 
